@@ -1,0 +1,12 @@
+name: 'Deploy action'
+description: 'Create GitHub deployment'
+inputs:
+  github-token:
+    description: 'Github token'
+    required: true
+  environment:
+    description: 'Environment name'
+    required: true
+runs:
+  using: node16
+  main: dist/index.js
